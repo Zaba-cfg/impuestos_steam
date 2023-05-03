@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+*::selection {
+    color: rgb(200, 200, 200);
+    background-color: black;
+}
+
+html {
+    background-color: #202225;
+}
+
+/* SISTEMA DE GRID MODO DISCORD */
+
+main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 72px 240px 1fr 240px;
+    grid-template-rows: 22px 48px 1fr;
+    grid-template-areas:
+        "b b b b"
+        "a g e e"
+        "a c d f";
+}
+
+#izquierda {
+    grid-area: a;
+    background-color: #202225;
+}
+
+#arriba {
+    grid-area: b;
+    background-color: #202225;
+}
+
+#medio-medio-arriba {
+    grid-area: e;
+    background-color: #36393f;
+}
+
+#medio-izquierda {
+    grid-area: c;
+    background-color: #2f3136;
+    border-top: 2px solid #232428;
+}
+
+#medio-medio {
+    grid-area: d;
+    background-color: #36393f;
+    border-top: 2px solid #2b2e33;
+}
+
+#medio-derecha {
+    grid-area: f;
+    background-color: #2f3136;
+    border-top: 2px solid #232428;
+}
+
+#esquina-superior-izquierda {
+    grid-area: g;
+    background-color: #2f3136;
+    border-top-left-radius: 10px;
+}
+
+/* Todo lo demás */
+
+#inputCalculadora {
+    background-color: #1b1b1b;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    border: none;
+}
+
+#inputCalculadora:hover {
+    background-color: black;
+    transition: all .6s;
+}
+
+#inputCalculadora::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+#resultadoCalculadora {
+    font-size: 40px;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #7edc8a;
+}
+
+#medio-medio-arriba {
+    display: flex;
+    justify-content: center;
+}
+
+#medio-medio {
+    display: flex;
+    justify-content: space-around;
+}
+
+#copyright {
+    color: #202225;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #202225;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    transition: all .4s;
+}
+
+#copyright:hover {
+    color: white;
+    background-color: #2f3136;
+    background-color: none;
+}
+
+#medio-derecha {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* queries */
+
+@media screen and (max-width: 767.98px) {
+    #medio-medio-arriba {
+        justify-content: space-between;
+    }
+}
