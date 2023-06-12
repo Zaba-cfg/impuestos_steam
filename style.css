@@ -133,8 +133,18 @@ main {
 
 /* queries */
 
-@media screen and (max-width: 767.98px) {
-    #medio-medio-arriba {
-        justify-content: space-between;
+@media screen and (max-width: 555px) {
+
+    #inputCalculadora,
+    #resultadoCalculadora {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    #resultadoCalculadora {
+        margin-top: 5rem;
     }
 }
