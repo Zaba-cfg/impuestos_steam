@@ -137,7 +137,12 @@ main {
 
 /* queries */
 
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 760px) {
+
+    #medio-medio {
+        background-color: #2f3136;
+        border-top: 2px solid #232428;
+    }
 
     #inputCalculadora,
     #resultadoCalculadora {
@@ -146,6 +151,24 @@ main {
         left: 25%;
         padding: 1rem;
         border-radius: 1rem;
+    }
+
+    #informacion {
+        position: absolute;
+        top: 13%;
+        left: 25%;
+        padding: 1rem;
+    }
+
+    #copyright {
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        padding: 1rem;
+        background-color: transparent;
+        color: #ececec;
+        transition: none;
+        text-decoration: underline;
     }
 
     #resultadoCalculadora {

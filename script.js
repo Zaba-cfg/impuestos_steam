@@ -16,8 +16,8 @@ function renderizarCalculo(calculo) {
    let mostrarCalculo = document.createElement("div")
    mostrarCalculo.className = "producto"
    mostrarCalculo.innerHTML = `
-<h2 id= "resultadoCalculadora">${calculo} ARS$</h2>
-<p>Impuestos calculados al 75% (actual)</p>
+<h2 id="resultadoCalculadora">${calculo} ARS$</h2>
+<p id="informacion">Impuestos calculados al 75% (actual)</p>
 `
    contenedorCalculos.append(mostrarCalculo)
 }
