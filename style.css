@@ -155,7 +155,14 @@ main {
 
     #informacion {
         position: absolute;
-        top: 13%;
+        top: 9%;
+        left: 25%;
+        padding: 1rem;
+    }
+
+    #informacion2 {
+        position: absolute;
+        top: 14%;
         left: 25%;
         padding: 1rem;
     }
