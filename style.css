@@ -135,6 +135,12 @@ main {
     flex-direction: column-reverse;
 }
 
+#cotiza {
+    width: 320px;
+    height: 260px;
+    border-radius: 10px
+}
+
 /* queries */
 
 @media screen and (max-width: 760px) {
@@ -169,7 +175,7 @@ main {
 
     #copyright {
         position: absolute;
-        top: 55%;
+        top: 90%;
         left: 25%;
         padding: 1rem;
         background-color: transparent;
@@ -180,5 +186,13 @@ main {
 
     #resultadoCalculadora {
         margin-top: 5rem;
+    }
+
+    #cotiza {
+        width: 260px;
+        height: 290px;
+        position: absolute;
+        top: 45%;
+        left: 25%;
     }
 }
